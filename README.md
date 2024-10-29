@@ -1,6 +1,6 @@
 # 1. 演示
 
-[![hty.ink](http://hty.ink]
+[hty.ink](https://markdown.com.cn)
 
 # 2. 框架使用
 
