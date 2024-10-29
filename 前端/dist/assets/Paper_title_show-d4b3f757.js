@@ -1,0 +1,1 @@
+import"./vue-da6db4e5.js";import{_ as e}from"./Yi_yan.vue_vue_type_style_index_0_scoped_96ea5664_lang-8357ce77.js";import{aF as _,v as s,b3 as o}from"./@vue-f44da537.js";const c={class:"paper_title_css"},a={__name:"Paper_title_show",props:["content"],setup(t){return(p,r)=>(_(),s("div",c,o(t.content),1))}},d=e(a,[["__scopeId","data-v-55c37d91"]]);export{d as P};

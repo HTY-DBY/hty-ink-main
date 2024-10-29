@@ -1,0 +1,11 @@
+.dark_body {
+    --vt-theam-color: #000000;
+    --vt-theam-r-color: #ffffff;
+    --color-text: #ffffff;
+}
+
+.light_body {
+    --vt-theam-color: #ffffff;
+    --vt-theam-r-color: #000000;
+    --color-text: #000000;
+}

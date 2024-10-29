@@ -1,0 +1,71 @@
+{
+  "main": "electron/main.js",
+  "type": "commonjs",
+  "name": "vue-project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron_test": "npx electron .",
+    "electron:build": "vite build && electron-builder"
+  },
+  "dependencies": {
+    "@kangc/v-md-editor": "^2.3.16",
+    "axios": "^1.4.0",
+    "bootstrap-icons": "^1.10.5",
+    "connect-history-api-fallback": "^2.0.0",
+    "github-markdown-css": "^5.2.0",
+    "highlight.js": "^11.8.0",
+    "html-loader": "^4.2.0",
+    "katex": "^0.16.8",
+    "lodash-es": "^4.17.21",
+    "marked": "^7.0.1",
+    "mathjax": "^3.2.2",
+    "mavon-editor": "^2.10.4",
+    "prismjs": "^1.29.0",
+    "text-loader": "^0.0.1",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.22.5",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "cross-env": "^7.0.3",
+    "electron": "^25.5.0",
+    "electron-builder": "^24.6.3",
+    "vite": "^4.3.9"
+  },
+  "build": {
+    "productName": "electron-vue",
+    "appId": "electron-vue",
+    "asar": true,
+    "directories": {
+      "output": "dist_electron/${version}"
+    },
+    "files": [
+      "dist",
+      "electron"
+    ],
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "win": {
+      "icon": "./electron/log.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "linux": {}
+  }
+}
